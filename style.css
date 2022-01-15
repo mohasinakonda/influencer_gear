@@ -14,6 +14,7 @@
 	box-sizing: border-box;
 }
 body {
+	font-family: "Roboto Mono", monospace;
 	background-color: #aaaa;
 }
 /*-------------------------------
@@ -62,7 +63,9 @@ body {
 	display: none;
 }
 
-/* hero section  */
+/*---------------------
+ hero section
+ ---------------------  */
 
 .hero {
 	display: grid;
@@ -104,7 +107,6 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/* overflow: hidden; */
 }
 
 .hero-photo {
@@ -151,16 +153,12 @@ company logo
 	gap: 30px;
 	width: 80%;
 	margin: 50px auto;
-	/* margin-: 50px; */
-	/* position: relative; */
 }
 
 .product {
 	padding: 15px;
 	border: 1.5px solid gray;
 	border-radius: 5px;
-
-	/* margin-bottom: 20px; */
 
 	box-shadow: 0 35px 40px rgba(180, 171, 171, 0.493);
 }
@@ -183,8 +181,6 @@ company logo
 }
 
 .image {
-	/* width: 350px;
-	height: 256px; */
 	width: 100%;
 }
 .value {
@@ -215,7 +211,9 @@ company logo
 	font-weight: bold;
 }
 
-/* region */
+/* -------------------
+users region 
+----------------------*/
 
 .region {
 	margin-top: 30px;
@@ -226,7 +224,6 @@ company logo
 	align-items: center;
 	justify-content: center;
 	margin-top: 30px;
-	/* overflow: auto; */
 }
 
 .country {
@@ -248,16 +245,16 @@ company logo
 	font-weight: bold;
 }
 
-/* footer section  */
+/* -----------------
+footer section
+------------------  */
 footer {
-	/* background-color: ; */
 	display: grid;
 	align-items: center;
 	background: #0a0826;
 	height: 240px;
 	color: white;
 	text-align: center;
-	/* padding: 10px; */
 }
 .title p {
 	margin: 10px 0;
@@ -269,7 +266,9 @@ footer {
 	font-size: 20px;
 }
 
-/* responsive design  */
+/* -------------------------
+responsive design  
+-----------------------------*/
 @media (max-width: 1440px) {
 	.influencer-popular-products {
 		justify-content: center;
@@ -304,6 +303,10 @@ footer {
 		width: 100%;
 	}
 }
+
+/* ---------------
+tablet view  
+------------------*/
 @media (max-width: 800px) {
 	.photo {
 		height: auto;
@@ -315,7 +318,16 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.product-title {
+		font-size: 24px;
+	}
+	.rating span {
+		font-size: 16px;
+	}
 
+	.rating p {
+		font-size: 16px;
+	}
 	.company-logo {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -347,6 +359,10 @@ footer {
 		font-weight: bold;
 	}
 }
+
+/* ------------------------
+mobile view 
+------------------------- */
 @media (max-width: 450px) {
 	body {
 		background-color: white;
@@ -414,7 +430,6 @@ footer {
 		position: relative;
 		left: 240px;
 		font-weight: bold;
-		/* margin-left: 0; */
 	}
 	.view-more-btn span {
 		margin: 0;
