@@ -14,7 +14,6 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: "Roboto Mono", monospace;
 	background-color: #aaaa;
 }
 /*-------------------------------
@@ -255,6 +254,7 @@ footer {
 	height: 240px;
 	color: white;
 	text-align: center;
+	font-family: "Roboto Mono", monospace;
 }
 .title p {
 	margin: 10px 0;
