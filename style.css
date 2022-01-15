@@ -208,7 +208,7 @@ company logo
 	color: #e02c6d;
 	position: relative;
 
-	left: 80%;
+	left: 73%;
 	padding: 30px;
 	font: 24px;
 	text-decoration: none;
@@ -244,6 +244,10 @@ company logo
 	display: none;
 }
 
+.view-more-btn span {
+	font-weight: bold;
+}
+
 /* footer section  */
 footer {
 	/* background-color: ; */
@@ -271,8 +275,7 @@ footer {
 		justify-content: center;
 	}
 	.photo {
-		width: 280px;
-		/* height: 230px; */
+		width: 260px;
 	}
 	.photo img {
 		width: 100%;
@@ -283,6 +286,7 @@ footer {
 	.countries {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
+		padding: 0 30px;
 	}
 }
 
@@ -326,8 +330,21 @@ footer {
 	.full-country-name {
 		display: none;
 	}
+	.country {
+		display: flex;
+		justify-content: center;
+	}
 	.country-short-name {
 		display: block;
+	}
+
+	.view-more-btn {
+		position: relative;
+		margin-top: 20px;
+		left: 230%;
+	}
+	.view-more-btn span {
+		font-weight: bold;
 	}
 }
 @media (max-width: 450px) {
@@ -385,6 +402,11 @@ footer {
 		margin-top: 30px;
 	}
 
+	.country {
+		display: flex;
+		justify-content: space-around;
+	}
+
 	.title h2 {
 		font-size: 32px;
 	}
@@ -397,13 +419,5 @@ footer {
 	.view-more-btn span {
 		margin: 0;
 		font-size: 18px;
-	}
-}
-
-@media (max-width: 330px) {
-	.company-logo {
-		display: grid;
-		justify-content: center;
-		gap: 10px;
 	}
 }
