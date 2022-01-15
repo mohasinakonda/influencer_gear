@@ -22,7 +22,7 @@ body {
 .container {
 	width: 80%;
 	margin: 0 auto;
-	background-color: rgba(245, 245, 245, 0.582);
+	background-color: white;
 }
 
 .highlight {
@@ -57,6 +57,9 @@ body {
 .nav-item a {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.8);
+}
+.bars {
+	display: none;
 }
 
 /* hero section  */
@@ -161,6 +164,9 @@ company logo
 
 	box-shadow: 0 35px 40px rgba(180, 171, 171, 0.493);
 }
+.product-title {
+	margin: 30px 0;
+}
 
 .photo {
 	width: 350px;
@@ -219,6 +225,8 @@ company logo
 	height: 150px;
 	align-items: center;
 	justify-content: center;
+	margin-top: 30px;
+	/* overflow: auto; */
 }
 
 .country {
@@ -231,6 +239,9 @@ company logo
 }
 .country img {
 	width: 30px;
+}
+.country-short-name {
+	display: none;
 }
 
 /* footer section  */
@@ -256,18 +267,29 @@ footer {
 
 /* responsive design  */
 @media (max-width: 1440px) {
+	.influencer-popular-products {
+		justify-content: center;
+	}
 	.photo {
-		width: 250px;
-		height: 200px;
+		width: 280px;
+		/* height: 230px; */
+	}
+	.photo img {
+		width: 100%;
 	}
 	.rating span {
 		font-size: 16px;
+	}
+	.countries {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
 
 @media (max-width: 1030px) {
 	.container {
 		width: 100%;
+		background: white;
 	}
 	.hero-info {
 		width: 90%;
@@ -276,5 +298,112 @@ footer {
 	.hero-image {
 		margin-top: -100px;
 		width: 100%;
+	}
+}
+@media (max-width: 800px) {
+	.photo {
+		height: auto;
+	}
+	.hero-title h1 {
+		font-size: 30px;
+	}
+	.influencer-popular-products {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.company-logo {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		align-items: center;
+	}
+	.countries {
+		display: grid;
+
+		grid-template-columns: repeat(3, 1fr);
+		height: auto;
+	}
+	.full-country-name {
+		display: none;
+	}
+	.country-short-name {
+		display: block;
+	}
+}
+@media (max-width: 450px) {
+	body {
+		background-color: white;
+	}
+	.container {
+		background-color: white;
+	}
+	.nav-item {
+		display: none;
+	}
+	.bars {
+		display: block;
+	}
+	.cart-item {
+		display: block;
+	}
+	.hero {
+		display: flex;
+		flex-direction: column;
+		height: 600px;
+	}
+	.hero-image {
+		width: 80%;
+		margin-top: -64px;
+	}
+	.hero-info {
+		order: 2;
+		margin: 10px;
+	}
+	.company-logo {
+		margin-top: 100px;
+		height: 214px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		gap: 14px;
+	}
+	.influencer-popular-products {
+		display: flex;
+		flex-direction: column;
+	}
+	.see-more-btn {
+		padding: 0;
+		left: 50%;
+	}
+	.photo {
+		width: 300px;
+	}
+	.photo img {
+		width: 100%;
+	}
+	.countries {
+		margin-top: 30px;
+	}
+
+	.title h2 {
+		font-size: 32px;
+	}
+	.view-more-btn {
+		position: relative;
+		left: 240px;
+		font-weight: bold;
+		/* margin-left: 0; */
+	}
+	.view-more-btn span {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 330px) {
+	.company-logo {
+		display: grid;
+		justify-content: center;
+		gap: 10px;
 	}
 }
